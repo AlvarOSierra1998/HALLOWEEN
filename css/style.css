@@ -35,6 +35,15 @@ body {
     opacity: .1;
     margin: auto;
     width: 25%;
+    display: flex;
+}
+
+.foto--Titulo.hidden{
+    display: none;
+}
+
+#titulo{
+    display: flex;
 }
 
 /*boton*/
@@ -191,6 +200,7 @@ form {
     box-shadow: 10px 10px 100px black;
     color: orange;
     margin: auto;
+    display: none;
 }
 
 form>input {
@@ -213,6 +223,7 @@ input {
 .contenedor-login .contenedor {
     display: none;
 }
+
 
 .form-Log {
     background-image: url();
@@ -369,4 +380,9 @@ input {
     /* referring directly to the animation's @keyframe declaration */
     animation-duration: 2s;
     /* don't forget to set a duration! */
+}
+
+
+#login{
+    display: none;
 }
