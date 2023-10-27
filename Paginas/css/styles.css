@@ -50,13 +50,17 @@
   .loader--foto__circular{
     visibility: hidden;
 }
-
-  
-
 }
 
+.hover--links:hover{
+  transition: .4s;
+  border-bottom: 1px solid var(--bs-white) ;
+  text-shadow: 0 0 10px #fff;
+   /* sombra en el borde inferior */
+}
 .titulo__uzumaki {
   font-family: 'Noto Serif JP', serif;
+  
 }
 
 #loader img {
