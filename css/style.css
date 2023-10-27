@@ -1,0 +1,372 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:800,400);
+
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #1d1e22;
+}
+
+#parallax {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/), url(../img/calabazaNosA.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+.foto--Titulo {
+    position: absolute;
+    top: 47%;
+    left: 53%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-family: "Arial";
+    text-transform: uppercase;
+    opacity: .1;
+    margin: auto;
+    width: 25%;
+}
+
+/*boton*/
+.ghst-btn {
+    position: relative;
+    display: inline-block;
+    top: 75%;
+    left: 47%;
+    width: auto;
+    height: auto;
+    max-width: 20rem;
+    min-height: 1rem;
+    padding: 1rem 2rem 0.8rem 2rem;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    background-color: rgba(92, 32, 32, 0);
+    background-image:
+        radial-gradient(#0c0600 0%, #000000 70%, transparent 71%, transparent 100%),
+        radial-gradient(#000000 0%, #000000 70%, transparent 71%, transparent 100%),
+        radial-gradient(#000000 0%, #000000 70%, transparent 71%, transparent 100%);
+    background-size: 0 0, 0 0, 0 0;
+    background-repeat: no-repeat;
+    background-position: 30% 50%, 70% 50%, 50% 80%;
+    text-decoration: none;
+    color: rgba(230, 127, 11, 0.829);
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    border-radius: 0;
+    transform: rotate(0);
+    transition:
+        border 2.5s 1s,
+        color 2s 0.6s,
+        max-width 0.05s 0.6s,
+        min-height 0.05s 0.6s,
+        background-color 0.4s,
+        background-size 0s,
+        transform 0.4s,
+        border-radius 0.4s;
+}
+
+.ghst-btn:hover {
+    max-width: 10rem;
+    min-height: 10rem;
+    color: rgba(245, 141, 5, 0);
+    border: 2px solid rgba(0, 0, 0, 0.342);
+    border-radius: 50%;
+    background-color: rgba(206, 128, 10, 0.39);
+    background-size: 1.5rem 1.5rem, 1.5rem 1.5rem, 1.5rem 1rem;
+    transform: rotate(400grad);
+    transition:
+        border 0.1s,
+        color 0.15s,
+        max-width 0.25s,
+        min-height 0.25s,
+        background-color 0.25s,
+        background-size 0.15s 0.45s,
+        transform 0.4s,
+        border-radius 0.25s 0.3s;
+}
+
+.ghst-btn:before,
+.ghst-btn:after {
+    position: absolute;
+    transition: all 0.25s;
+}
+
+.ghst-btn:before {
+    content: 'boo';
+    top: 50%;
+    left: 50%;
+    color: rgba(255, 255, 255, 0.3);
+    font-weight: 800;
+    letter-spacing: 0;
+    transform: scale(0) translateX(0) translateY(0);
+    transition:
+        color 0s,
+        transform 0s;
+}
+
+.ghst-btn:after {
+    content: '';
+    top: 70%;
+    left: 20%;
+    width: 60%;
+    height: 7%;
+    background: none;
+    border-radius: 50%;
+    box-shadow: 0 5rem 15px rgba(0, 0, 0, 0.15);
+    opacity: 0;
+    transition: opacity 0.05s;
+}
+
+.ghst-btn:hover:before {
+    color: rgba(255, 255, 255, 0.3);
+    transform: scale(1.3) translateX(55%) translateY(-110%);
+    transition:
+        color 0.05s 0.8s,
+        transform 0.1s 0.8s;
+}
+
+.ghst-btn:hover:after {
+    opacity: 1;
+    transition: opacity 0.2s 0.5s;
+}
+
+/*FORMULARIO LOGIN/REGISTRAR*/
+
+/*BOTON*/
+.lista {
+    position: relative;
+    font-size: 2rem;
+    color: rgb(26, 23, 23);
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 30px;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.lista:hover {
+    color: orange;
+    background-color: #000000;
+    padding: 10px;
+    border-radius: 10%;
+}
+
+
+
+.lista::after {
+    content: '';
+    position: absolute;
+    left: 0px;
+    bottom: -6px;
+    width: 100%;
+    height: 2px;
+    background: white;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.lista:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+    font-weight: bolder;
+}
+/*CONTINUACION DE FORMULARIO*/
+form {
+    background-color: #000000;
+    padding: 50px;
+    border-radius: 10px;
+    border: 2px solid black;
+    box-shadow: 10px 10px 100px black;
+    color: orange;
+    margin: auto;
+}
+
+form>input {
+    display: block;
+    margin: 10px;
+    border: none;
+    color: black;
+    outline: none;
+    margin: auto;
+    font-size: 1em;
+}
+
+input {
+    padding: 10px;
+    border: none;
+    background: transparent;
+    outline: none;
+}
+
+.contenedor-login .contenedor {
+    display: none;
+}
+
+.form-Log {
+    background-image: url();
+    width: 70rem;
+    height: 40rem;
+    background-repeat: no-repeat;
+    font-size: 40px;
+    color: rgb(253, 251, 251);
+}
+
+.close {
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    justify-content: center;
+    text-align: center;
+    padding: 0px;
+    width: 4%;
+    height: 8%;
+}
+
+.close:hover {
+    background-color: rgba(0, 0, 0, 0.486);
+    color: yellow;
+    transition: .5s;
+    border-radius: 10px;
+
+}
+
+.foto_form {
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+
+}
+
+.tituloForm {
+    margin: auto;
+    padding: 5px;
+    font-size: 2em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.borderInput:hover {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.452);
+    color: rgb(252, 172, 0);
+    transition: .5s;
+    background-color: rgb(34, 32, 31);
+    border-radius: 6px;
+}
+
+.borderInput::after {
+    content: "";
+    display: flex;
+    height: 4px;
+    width: 50%;
+    margin: auto;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20%;
+    cursor: pointer;
+    transform: scale(0);
+    transition: transform 0.3s ease;
+}
+
+.InnerLog {
+    background: transparent;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+
+    width: 20%;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    cursor: pointer;
+    border-bottom: 1px solid yellow;
+}
+
+.InnerLog:hover {
+    background-color: yellow;
+    color: #000000;
+    transition: .5s;
+    border-radius: 10PX;
+
+}
+
+.noRegister {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: -19px;
+    top: -52px;
+    width: 20%;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.seccionesTitulo {
+    background: transparent;
+    border-bottom: 1px solid yellow;
+    padding: 10px;
+    width: 10%;
+
+}
+
+.contenedorSeccionInfo {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: auto;
+}
+
+.seccionInfo {
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: -25px 10px 300px -300px;
+    background-color: #0000009c;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+.seccionInfo:hover {
+    background-color: yellow;
+    transition: .5s;
+    color: #000000;
+
+}
+
+/* This only changes this particular animation duration */
+.animate__animated.animate__fadeIn {
+    --animate-duration: 4s;
+    opacity: .1;
+}
+
+/* This changes all the animations globally */
+:root {
+    --animate-duration: 800ms;
+    --animate-delay: 0.9s;
+}
+
+.my-element {
+    display: inline-block;
+    margin: 0 0.5rem;
+    animation: fadeIn;
+    /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s;
+    /* don't forget to set a duration! */
+}

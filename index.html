@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="https://emojitool.com/img/facebook/15.0/jack-o-lantern-2301.png" />
+    <title>Halloween</title>
+</head>
+
+<body>
+    <header>
+        <div id="parallax">
+            <img class="foto--Titulo animate__animated animate__fadeIn" src="img/titulo.png" alt="titulo">
+            <a href="Paginas/main.html" class="ghst-btn" onclick="mostrar2()">Pulsa</a>
+        <!--FORMULARIO-->  
+        <section id="cerrar" class="contenedor-login">
+            <form class="form-Log" action="/action_page.php" method="post">
+                <span class="close" onclick="cerraranuncio()">x</span>
+                <div>
+                    <img class="foto_form" src="img/dembw48-ff5fc7ce-2f18-4c0f-a76a-17bafd721aee.png" alt="">
+                    <h2 class="tituloForm">Log In</h2>
+                </div>
+                <div class="user">
+                    <span class="icono">
+
+                        <ion-icon name="person-circle-outline"></ion-icon></span>
+                    </span>
+                    <input class="borderInput" type="text" name="User" id="users" required
+                        placeholder="introduzca su usuario">
+                </div>
+                <div>
+                    <span class="icono">
+                        <ion-icon name="lock-closed-outline"></ion-icon></span>
+                    </span>
+                    <input class="borderInput" type="password" name="pass" id="password" required
+                        placeholder="introduzca su contraseña">
+                </div>
+                <input onclick="enviar()" class="InnerLog" type="submit" value="Entrar">
+
+                <a href="">
+                    <span id="vacio" onclick="registar()" class="noRegister">No estas registrado?</span>
+                </a>
+            </form>
+        </section>
+        </div>
+    </header>
+
+
+    <script src="js/main.js"></script>
+    <script src="js/LoginJs.js"></script>
+</body>
+
+</html>
