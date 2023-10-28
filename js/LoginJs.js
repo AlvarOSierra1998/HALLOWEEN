@@ -17,13 +17,14 @@ function login(){
     let contraseña = document.getElementById("typePasswordX");
     if (usuario.value === "admin" && contraseña.value === "1234"){
     alert("Entra"); 
-        window.location.href = "../Paginas/main.html";
+        window.location.href = "../HALLOWEEN/Paginas/main.html"; 
+       
     }else{
         alert("Te has equivocado monstruo"); 
     }
 }
 
-
+    // FUNCION PARAR LA X DEL LOGIN
 function cerraranuncio(){
     var ocultar = document.getElementById("login");
     ocultar.style.display = "none";
