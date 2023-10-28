@@ -12,20 +12,20 @@ function mostrar2() {
 
 
 //FUNCION LOGIN (COMENTAR)
-function login(){
+function login() {
     let usuario = document.getElementById("usuario");
     let contraseña = document.getElementById("typePasswordX");
-    if (usuario.value === "admin" && contraseña.value === "1234"){
-    alert("Entra"); 
-        window.location.href = "../HALLOWEEN/Paginas/main.html"; 
-       
-    }else{
-        alert("Te has equivocado monstruo"); 
+    if (usuario.value === "admin" && contraseña.value === "1234") {
+        alert("...Bienvenido al infierno...");
+        window.location.href = "../HALLOWEEN/Paginas/main.html";
+
+    } else {
+        alert("Te has equivocado monstruo");
     }
 }
 
-    // FUNCION PARAR LA X DEL LOGIN
-function cerraranuncio(){
+// FUNCION PARAR LA X DEL LOGIN
+function cerraranuncio() {
     var ocultar = document.getElementById("login");
     ocultar.style.display = "none";
     let boton = document.getElementById("boton");

@@ -226,12 +226,42 @@ input {
 
 
 .form-Log {
-    background-image: url();
-    width: 70rem;
-    height: 40rem;
+    background-image: url(../Paginas/assets/img/bg-signup2.png);
+    background-size: cover;
     background-repeat: no-repeat;
-    font-size: 40px;
     color: rgb(253, 251, 251);
+    margin: auto;
+    border: 1px solid black;
+    border-radius: 50px;
+    box-shadow:  -20px -20px 60px #000000,
+                20px 20px 60px #000000;
+}
+.txt-log{
+    font-size: 5em;
+    /*QUITAR ESTO SI NO GUSTA*/
+    box-shadow: inset 30px 30px 20px rgba(0, 0, 0, 0.90);
+    border-radius: 100%;
+    color: #ecececc0;
+    margin: auto;
+    box-shadow: inset  -20px -20px 60px #000000,
+                20px 20px 30px #000000;
+    /*QUITAR ESTO SI NO GUSTA*/            
+}
+input[type="text"], input[type="password"]{
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid white;
+    border-radius: 0px;
+}
+
+input[type="text"]:focus,input[type = "password"]:focus{
+    background: transparent;
+    border: 10px solid rgba(0, 0, 0, 0.219);
+    border-bottom: 1px solid white;
+    color: rgb(255, 255, 255);
+    transition: .2s;
+    box-shadow: inset 30px 30px 20px rgba(0, 0, 0, 0.90);
+    
 }
 
 .close {
@@ -243,11 +273,11 @@ input {
     padding: 0px;
     width: 4%;
     height: 8%;
+    font-size: 1.80em;
 }
 
 .close:hover {
-    background-color: rgba(0, 0, 0, 0.486);
-    color: yellow;
+    color: orange;
     transition: .5s;
     border-radius: 10px;
 
