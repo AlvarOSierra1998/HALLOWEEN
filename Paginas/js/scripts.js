@@ -46,21 +46,20 @@ window.addEventListener('DOMContentLoaded', event => {
 
 });
 
- // Mostrar el elemento de carga
- document.getElementById('loader').style.display = 'block';
+// Mostrar el elemento de carga
+document.getElementById('loader').style.display = 'block';
 
- // Establecer el tiempo de espera en milisegundos (por ejemplo, 3000ms para 3 segundos)
- var tiempoDeEspera = 1500;
+// Establecer el tiempo de espera en milisegundos (por ejemplo, 3000ms para 3 segundos)
+var tiempoDeEspera = 1500;
 
- // Después del tiempo de espera, ocultar el elemento de carga y mostrar el contenido
- setTimeout(function() {
-     document.getElementById('loader').style.display = 'none';
-     document.getElementById('content').style.display = 'block';
- }, tiempoDeEspera);
-
-
+// Después del tiempo de espera, ocultar el elemento de carga y mostrar el contenido
+setTimeout(function () {
+    document.getElementById('loader').style.display = 'none';
+    document.getElementById('content').style.display = 'block';
+}, tiempoDeEspera);
 
 
 
 
- 
+
+
