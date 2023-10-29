@@ -390,6 +390,9 @@ input[type="text"]:focus,input[type = "password"]:focus{
     color: #000000;
 
 }
+#login{
+    display: none;
+}
 
 /* This only changes this particular animation duration */
 .animate__animated.animate__fadeIn {
@@ -412,7 +415,3 @@ input[type="text"]:focus,input[type = "password"]:focus{
     /* don't forget to set a duration! */
 }
 
-
-#login{
-    display: none;
-}
