@@ -238,7 +238,7 @@ input {
 }
 .txt-log{
     font-size: 5em;
-    /*QUITAR ESTO SI NO GUSTA*/
+    /*QUITAR ESTO SI NO GUSTA*
     box-shadow: inset 30px 30px 20px rgba(0, 0, 0, 0.90);
     border-radius: 100%;
     color: #ecececc0;
