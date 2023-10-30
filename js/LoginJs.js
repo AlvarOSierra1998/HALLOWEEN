@@ -17,7 +17,7 @@ function login() {
     let contraseña = document.getElementById("typePasswordX");
     if (usuario.value === "admin" && contraseña.value === "1234") {
         alert("...Bienvenido al infierno...");
-        window.location.href = "../HALLOWEEN/Paginas/main.html";
+        window.location.href = "../Paginas/main.html";
 
     } else {
         alert("Te has equivocado monstruo");
