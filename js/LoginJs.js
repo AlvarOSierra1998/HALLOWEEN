@@ -11,7 +11,7 @@ function mostrar2() {
 
 
 
-//FUNCION LOGIN (COMENTAR)
+//FUNCION LOGIN
 function login() {
     let usuario = document.getElementById("usuario");
     let contraseña = document.getElementById("typePasswordX");
@@ -34,8 +34,4 @@ function cerraranuncio() {
     titulo.style.display = "flex";
 }
 
-/*function cerrarRegistro(){
-    var ocultar = document.getElementById("cerrarRegistro");
-    ocultar.style.display = "none";
-}*/
 

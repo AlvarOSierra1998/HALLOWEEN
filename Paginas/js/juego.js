@@ -15,6 +15,7 @@ const state = {
     loop: null
 }
 
+// funcion para mezclar las cartas y darle un valor aleatorio
 const shuffle = array => {
     const clonedArray = [...array]
 
@@ -43,6 +44,7 @@ const pickRandom = (array, items) => {
     return randomPicks
 }
 
+// Funcion para generar  el juego 
 const generateGame = () => {
     const dimensions = selectors.board.getAttribute('data-dimension');
 
@@ -68,7 +70,7 @@ const generateGame = () => {
 
     selectors.board.replaceWith(parser.querySelector('.board'))
 }
-
+// Funcion para empezar el juego
 const startGame = () => {
     state.gameStarted = true
     selectors.start.classList.add('disabled')
@@ -80,7 +82,7 @@ const startGame = () => {
         selectors.timer.innerText = `Time: ${state.totalTime} sec`
     }, 1000)
 }
-
+// Funcion para darle la vuelta por detras a las cartas
 const flipBackCards = () => {
     document.querySelectorAll('.card:not(.matched)').forEach(card => {
         card.classList.remove('flipped')
@@ -88,7 +90,7 @@ const flipBackCards = () => {
 
     state.flippedCards = 0
 }
-
+// Funcion para darle la vuelta a las cartas
 const flipCard = card => {
     state.flippedCards++
     state.totalFlips++
@@ -128,7 +130,7 @@ const flipCard = card => {
         }, 1000)
     }
 }
-
+// Funcion que esta escuchando que pase el evento o no
 const attachEventListeners = () => {
     document.addEventListener('click', event => {
         const eventTarget = event.target
